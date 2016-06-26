@@ -67,10 +67,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wri-dp-2si">
+                                <rect key="frame" x="132" y="187" width="339" height="34"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4Uv-qu-iaA" firstAttribute="top" secondItem="Znd-mx-ImZ" secondAttribute="bottom" constant="34" id="0xw-qr-pJB"/>
+                            <constraint firstItem="Wri-dp-2si" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3rn-h2-0Ia"/>
                             <constraint firstItem="Znd-mx-ImZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6qS-Dm-qle"/>
                             <constraint firstItem="kx1-B6-SZh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7fH-bF-puI"/>
                             <constraint firstItem="GbR-5r-NF2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cqq-hY-Bbv"/>
@@ -79,6 +86,7 @@
                             <constraint firstItem="urN-cF-hCd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="HjQ-cQ-Hqr"/>
                             <constraint firstItem="9ID-jy-wpA" firstAttribute="top" secondItem="GbR-5r-NF2" secondAttribute="bottom" constant="21" id="ILd-4O-rjo"/>
                             <constraint firstItem="9ID-jy-wpA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="REH-t9-q8f"/>
+                            <constraint firstItem="Wri-dp-2si" firstAttribute="top" secondItem="urN-cF-hCd" secondAttribute="bottom" constant="61" id="Reo-mU-NcI"/>
                             <constraint firstItem="4Uv-qu-iaA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TUh-WU-hUI"/>
                             <constraint firstItem="kx1-B6-SZh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zwq-oB-PCx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kx1-B6-SZh" secondAttribute="bottom" id="aLi-i8-4PX"/>
@@ -91,6 +99,7 @@
                         <outlet property="CuinButton" destination="GbR-5r-NF2" id="Zze-JN-qlF"/>
                         <outlet property="Logo" destination="urN-cF-hCd" id="3ty-XG-XLB"/>
                         <outlet property="PlayButton" destination="4Uv-qu-iaA" id="7I2-fh-FHJ"/>
+                        <outlet property="ResultLabel" destination="Wri-dp-2si" id="z5d-uA-lh9"/>
                         <outlet property="TapsLabel" destination="9ID-jy-wpA" id="DHB-up-gWD"/>
                         <outlet property="TapsText" destination="Znd-mx-ImZ" id="mf8-no-BTF"/>
                     </connections>

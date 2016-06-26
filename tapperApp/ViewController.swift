@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Logo: UIImageView!
     @IBOutlet weak var TapsLabel: UILabel!
     @IBOutlet weak var TapsText: UITextField!
+    @IBOutlet weak var ResultLabel: UILabel!
     
     var howManyToTap: Int = 0
     var tapping: Int = 0
@@ -41,6 +42,8 @@ class ViewController: UIViewController {
             PlayButton.hidden = false
             CuinButton.hidden = true
             TapsLabel.hidden = true
+            ResultLabel.hidden = false
+            ResultLabel.text = "you got \(howManyToTap) Taps"
             howManyToTap = 0
             tapping = 0
         }
@@ -54,9 +57,11 @@ class ViewController: UIViewController {
         TapsText.hidden = true
         howManyToTap = Int(TapsText.text!)!
         TapsText.text = ""
+        TapsLabel.text = ""
         PlayButton.hidden = true
         CuinButton.hidden = false
         TapsLabel.hidden = false
+        ResultLabel.hidden = true
         
     }
 }
