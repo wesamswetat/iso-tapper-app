@@ -45,6 +45,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ClenTextLabelWenFocs:" destination="BYZ-38-t0r" eventType="touchDown" id="rXH-DZ-bMd"/>
+                                </connections>
                             </textField>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbR-5r-NF2" userLabel="CuinButton">
                                 <rect key="frame" x="214" y="42" width="172" height="172"/>

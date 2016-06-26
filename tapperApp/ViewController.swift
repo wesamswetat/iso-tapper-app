@@ -53,16 +53,27 @@ class ViewController: UIViewController {
 
     @IBAction func PlayButton(sender: AnyObject) {
         
-        Logo.hidden = true
-        TapsText.hidden = true
-        howManyToTap = Int(TapsText.text!)!
-        TapsText.text = ""
-        TapsLabel.text = ""
-        PlayButton.hidden = true
-        CuinButton.hidden = false
-        TapsLabel.hidden = false
-        ResultLabel.hidden = true
+       
         
+        if TapsText.text != nil && TapsText.text != ""{
+            howManyToTap = Int(TapsText.text!)!
+            Logo.hidden = true
+            TapsText.hidden = true
+            TapsText.text = ""
+            TapsLabel.text = ""
+            PlayButton.hidden = true
+            CuinButton.hidden = false
+            TapsLabel.hidden = false
+            ResultLabel.hidden = true
+        }else{
+            TapsText.text = "You Have To Enter a Number"
+            TapsText.textColor = UIColor(red: 0.0, green: 0.004, blue: 0.502, alpha: 1.0)
+        }
+        
+    }
+    
+    @IBAction func ClenTextLabelWenFocs(sender: UITextView){
+        TapsText.text = ""
     }
 }
 
