@@ -75,5 +75,6 @@ class ViewController: UIViewController {
     @IBAction func ClenTextLabelWenFocs(sender: UITextView){
         TapsText.text = ""
     }
+    
 }
 
